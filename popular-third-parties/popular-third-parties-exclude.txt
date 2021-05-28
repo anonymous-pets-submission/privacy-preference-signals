@@ -1,0 +1,12 @@
+fonts.googleapis.com
+cloudflare.com
+ajax.googleapis.com
+bootstrapcdn.com
+newrelic.com
+jsdelivr.net
+jquery.com
+typekit.net
+fontawesome.com
+s3.amazonaws.com
+polyfill.io
+akamaihd.net

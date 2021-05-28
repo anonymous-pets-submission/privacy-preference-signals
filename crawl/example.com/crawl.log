@@ -1,0 +1,111 @@
+2021/02/14 00:19:24  info browser profile path: /tmp/ngprofile222441030
+2021/02/14 00:19:24 debug conn: debugging websocket: ws://127.0.0.1:9298/devtools/browser/e7bd64dd-a8a3-4671-8ab7-385599727e48
+2021/02/14 00:19:24 debug browser out: DevTools listening on ws://127.0.0.1:9298/devtools/browser/e7bd64dd-a8a3-4671-8ab7-385599727e48
+2021/02/14 00:19:24 debug conn: -> 1:Target.createTarget, {"url":"about:blank"}
+2021/02/14 00:19:24 debug conn: starting reading loop
+2021/02/14 00:19:24 debug conn: <- 1               
+2021/02/14 00:19:24 debug conn: -> 2:Target.attachToTarget, {"targetId":"9C0D5ECD51B05C41E85C3D01D602C68B","flatten":true}
+2021/02/14 00:19:24 debug conn: <- 2               
+2021/02/14 00:19:24 debug conn: connect to target 9C0D5ECD51B05C41E85C3D01D602C68B with session 2C49A0EFA12B5F4593A9BDDC220BBFF2
+2021/02/14 00:19:24 debug conn: -> 3:Database.enable sessionid=2C49A0EFA12B5F4593A9BDDC220BBFF2
+2021/02/14 00:19:24 debug conn: <- 3               
+2021/02/14 00:19:24 debug conn: -> 4:DOMStorage.enable sessionid=2C49A0EFA12B5F4593A9BDDC220BBFF2
+2021/02/14 00:19:24 debug conn: <- 4               
+2021/02/14 00:19:24 debug conn: -> 5:DOMSnapshot.enable sessionid=2C49A0EFA12B5F4593A9BDDC220BBFF2
+2021/02/14 00:19:24 debug conn: <- 5               
+2021/02/14 00:19:24 debug conn: -> 6:IndexedDB.enable sessionid=2C49A0EFA12B5F4593A9BDDC220BBFF2
+2021/02/14 00:19:24 debug conn: <- 6               
+2021/02/14 00:19:24 debug conn: -> 7:Inspector.enable sessionid=2C49A0EFA12B5F4593A9BDDC220BBFF2
+2021/02/14 00:19:24 debug conn: <- 7               
+2021/02/14 00:19:24 debug conn: -> 8:Log.enable sessionid=2C49A0EFA12B5F4593A9BDDC220BBFF2
+2021/02/14 00:19:24 debug conn: <- 8               
+2021/02/14 00:19:24 debug conn: -> 9:Network.enable sessionid=2C49A0EFA12B5F4593A9BDDC220BBFF2
+2021/02/14 00:19:24 debug conn: <- 9               
+2021/02/14 00:19:24 debug conn: -> 10:Page.enable sessionid=2C49A0EFA12B5F4593A9BDDC220BBFF2
+2021/02/14 00:19:24 debug conn: <- 10              
+2021/02/14 00:19:24 debug conn: -> 11:Runtime.enable sessionid=2C49A0EFA12B5F4593A9BDDC220BBFF2
+2021/02/14 00:19:24 debug conn: event Runtime.executionContextCreated
+2021/02/14 00:19:24 debug conn: <- 11              
+2021/02/14 00:19:24 debug conn: -> 12:Security.enable sessionid=2C49A0EFA12B5F4593A9BDDC220BBFF2
+2021/02/14 00:19:24 debug conn: event Security.securityStateChanged
+2021/02/14 00:19:24 debug conn: <- 12              
+2021/02/14 00:19:24 debug conn: -> 13:Emulation.setDeviceMetricsOverride sessionid=2C49A0EFA12B5F4593A9BDDC220BBFF2, {"width":0,"height":0,"deviceScaleFactor":2,"mobile":false,"scale":1,"screenWidth":0,"screenHeight":0,"positionX":0,"positionY":0,"dontSetVisibleSize":false}
+2021/02/14 00:19:24 debug conn: <- 13              
+2021/02/14 00:19:24  info Loading https://www.example.com/ url=https://www.example.com/
+2021/02/14 00:19:24 debug conn: -> 14:Page.navigate sessionid=2C49A0EFA12B5F4593A9BDDC220BBFF2, {"transitionType":"typed","url":"https://www.example.com/"}
+2021/02/14 00:19:24 debug conn: event Network.requestWillBeSent
+2021/02/14 00:19:24 debug conn: event Network.requestWillBeSentExtraInfo
+2021/02/14 00:19:24 debug conn: event Network.responseReceivedExtraInfo
+2021/02/14 00:19:24 debug conn: event Network.responseReceived
+2021/02/14 00:19:24 debug conn: <- 14              
+2021/02/14 00:19:24 debug conn: event Page.frameStartedLoading
+2021/02/14 00:19:24 debug conn: event Security.securityStateChanged
+2021/02/14 00:19:24 debug conn: event Runtime.executionContextsCleared
+2021/02/14 00:19:24 debug conn: event Page.frameNavigated
+2021/02/14 00:19:24 debug conn: event Runtime.executionContextCreated
+2021/02/14 00:19:24 debug conn: event Network.dataReceived
+2021/02/14 00:19:24 debug conn: event Network.loadingFinished
+2021/02/14 00:19:24 debug conn: event Page.loadEventFired
+2021/02/14 00:19:24 debug conn: event Page.frameStoppedLoading
+2021/02/14 00:19:24 debug conn: event Page.domContentEventFired
+2021/02/14 00:19:25 debug Fetched cert certfetch.Spec{Hostname:"www.example.com", IP:"93.184.216.34", Port:443} url=https://www.example.com/
+2021/02/14 00:19:35  info Page load exit reason: idle url=https://www.example.com/
+2021/02/14 00:19:35 debug conn: -> 15:Page.stopLoading sessionid=2C49A0EFA12B5F4593A9BDDC220BBFF2
+2021/02/14 00:19:35 debug conn: <- 15              
+2021/02/14 00:19:35 debug conn: -> 16:Runtime.compileScript sessionid=2C49A0EFA12B5F4593A9BDDC220BBFF2, {"expression":"(function () {\n    function logInfo(data) {\n        console.info(\"\\x3cngfetch-info\\x3e\" + JSON.stringify(data) + \"\\x3c/ngfetch-info\\x3e\");\n    }\n\n    logInfo({\n        type: \"cmp-info\",\n        cmp: !!window.__cmp,\n        tcfapi: !!window.__tcfapi,\n        Optanon: !!window.Optanon,\n    });\n\n    [\"__tcfapi\", \"__cmp\"].forEach(function (cmpfun) {\n        if (!window[cmpfun]) return;\n\n        let logged_waiting = false;\n        let ping = window.setInterval(function () {\n            window[cmpfun](\"ping\", null, function (pong, success) {\n                if (pong \u0026\u0026 !pong.cmpLoaded \u0026\u0026 !logged_waiting) {\n                    logInfo({type: \"cmp-ping-waiting\", cmpfun, pong, success})\n                    logged_waiting = true;\n                }\n                if (pong \u0026\u0026 pong.cmpLoaded) {\n                    logInfo({type: \"cmp-ping-done\", cmpfun, pong, success})\n                    window.clearInterval(ping);\n                }\n            });\n        }, 1);\n\n    });\n\n    logInfo({\n        type: \"js-info\",\n        data: Object.keys(window)\n    });\n})();\n","sourceURL":"https://netograph/user","persistScript":true}
+2021/02/14 00:19:35 debug conn: <- 16              
+2021/02/14 00:19:35  info Running user script       url=https://www.example.com/
+2021/02/14 00:19:35 debug conn: -> 17:Runtime.runScript sessionid=2C49A0EFA12B5F4593A9BDDC220BBFF2, {"scriptId":"3","awaitPromise":true}
+2021/02/14 00:19:35 debug browser out: [0214/001935.466237:INFO:CONSOLE(3)] "<ngfetch-info>{"type":"cmp-info","cmp":false,"tcfapi":false,"Optanon":false}</ngfetch-info>", source: https://netograph/user (3)
+2021/02/14 00:19:35 debug browser out: [0214/001935.466688:INFO:CONSOLE(3)] "<ngfetch-info>{"type":"js-info","data":["window","self","document","name","location","customElements","history","locationbar","menubar","personalbar","scrollbars","statusbar","toolbar","status","closed","frames","length","top","opener","parent","frameElement","navigator","origin","external","screen","innerWidth","innerHeight","scrollX","pageXOffset","scrollY","pageYOffset","visualViewport","screenX","screenY","outerWidth","outerHeight","devicePixelRatio","clientInformation","screenLeft","screenTop","defaultStatus","defaultstatus","styleMedia","onsearch","isSecureContext","performance","onappinstalled","onbeforeinstallprompt","crypto","indexedDB","webkitStorageInfo","sessionStorage","localStorage","onabort","onblur","oncancel","oncanplay","oncanplaythrough","onchange","onclick","onclose","oncontextmenu","oncuechange","ondblclick","ondrag","ondragend","ondragenter","ondragleave","ondragover","ondragstart","ondrop","ondurationchange","onemptied","onended","onerror","onfocus","onformdata","oninput","oninvalid","onkeydown","onkeypress","onkeyup","onload","onloadeddata","onloadedmetadata","onloadstart","onmousedown","onmouseenter","onmouseleave","onmousemove","onmouseout","onmouseover","onmouseup","onmousewheel","onpause","onplay","onplaying","onprogress","onratechange","onreset","onresize","onscroll","onseeked","onseeking","onselect","onstalled","onsubmit","onsuspend","ontimeupdate","ontoggle","onvolumechange","onwaiting","onwebkitanimationend","onwebkitanimationiteration","onwebkitanimationstart","onwebkittransitionend","onwheel","onauxclick","ongotpointercapture","onlostpointercapture","onpointerdown","onpointermove","onpointerup","onpointercancel","onpointerover","onpointerout","onpointerenter","onpointerleave","onselectstart","onselectionchange","onanimationend","onanimationiteration","onanimationstart","ontransitionrun","ontransitionstart","ontransitionend","ontransitioncancel","onafterprint","onbeforeprint","onbeforeunload","onhashchange","onlanguagechange","onmessage","onmessageerror","onoffline","ononline","onpagehide","onpageshow","onpopstate","onrejectionhandled","onstorage","onunhandledrejection","onunload","alert","atob","blur","btoa","cancelAnimationFrame","cancelIdleCallback","captureEvents","clearInterval","clearTimeout","close","confirm","createImageBitmap","fetch","find","focus","getComputedStyle","getSelection","matchMedia","moveBy","moveTo","open","postMessage","print","prompt","queueMicrotask","releaseEvents","requestAnimationFrame","requestIdleCallback","resizeBy","resizeTo","scroll","scrollBy","scrollTo","setInterval","setTimeout","stop","webkitCancelAnimationFrame","webkitRequestAnimationFrame","caches","ondevicemotion","ondeviceorientation","ondeviceorientationabsolute","cookieStore","showDirectoryPicker","showOpenFilePicker","showSaveFilePicker","speechSynthesis","onpointerrawupdate","trustedTypes","crossOriginIsolated","openDatabase","webkitRequestFileSystem","webkitResolveLocalFileSystemURL"]}</ngfetch-info>", source: https://netograph/user (3)
+2021/02/14 00:19:35 debug conn: event Runtime.consoleAPICalled
+2021/02/14 00:19:35 debug conn: event Runtime.consoleAPICalled
+2021/02/14 00:19:35 debug conn: <- 17              
+2021/02/14 00:19:35 debug Taking thumbnail screenshot... url=https://www.example.com/
+2021/02/14 00:19:35 debug conn: -> 18:Page.captureScreenshot sessionid=2C49A0EFA12B5F4593A9BDDC220BBFF2, {"format":"jpeg","quality":50}
+2021/02/14 00:19:35 debug conn: <- 18              
+2021/02/14 00:19:35 debug Taking full screenshot... url=https://www.example.com/
+2021/02/14 00:19:35 debug conn: -> 19:Page.getLayoutMetrics sessionid=2C49A0EFA12B5F4593A9BDDC220BBFF2
+2021/02/14 00:19:35 debug conn: <- 19              
+2021/02/14 00:19:35  info full screenshot at offset (0, 0) size 800x600 url=https://www.example.com/
+2021/02/14 00:19:35 debug conn: -> 20:Emulation.setDeviceMetricsOverride sessionid=2C49A0EFA12B5F4593A9BDDC220BBFF2, {"width":800,"height":600,"deviceScaleFactor":2,"mobile":false,"scale":1,"screenWidth":0,"screenHeight":0,"positionX":0,"positionY":0,"dontSetVisibleSize":false,"viewport":{"x":0,"y":0,"width":800,"height":600,"scale":1}}
+2021/02/14 00:19:35 debug conn: event Page.frameResized
+2021/02/14 00:19:35 debug conn: event Page.frameResized
+2021/02/14 00:19:35 debug conn: <- 20              
+2021/02/14 00:19:35 debug conn: -> 21:Page.captureScreenshot sessionid=2C49A0EFA12B5F4593A9BDDC220BBFF2, {"format":"jpeg","quality":80,"clip":{"x":0,"y":0,"width":800,"height":600,"scale":1}}
+2021/02/14 00:19:35 debug conn: <- 21              
+2021/02/14 00:19:35 debug Taking DOM snapshot...    url=https://www.example.com/
+2021/02/14 00:19:35 debug conn: -> 22:DOMSnapshot.captureSnapshot sessionid=2C49A0EFA12B5F4593A9BDDC220BBFF2, {"computedStyles":["background-color","color","display","font-size","font-weight","position","visibility","z-index"]}
+2021/02/14 00:19:35 debug conn: <- 22              
+2021/02/14 00:19:35 debug conn: -> 23:Emulation.clearDeviceMetricsOverride sessionid=2C49A0EFA12B5F4593A9BDDC220BBFF2
+2021/02/14 00:19:35 debug conn: event Page.frameResized
+2021/02/14 00:19:35 debug conn: event Page.frameResized
+2021/02/14 00:19:35 debug conn: <- 23              
+2021/02/14 00:19:35 debug Stopping                  url=https://www.example.com/
+2021/02/14 00:19:35 debug conn: -> 24:Page.setDocumentContent sessionid=2C49A0EFA12B5F4593A9BDDC220BBFF2, {"frameId":"9C0D5ECD51B05C41E85C3D01D602C68B","html":""}
+2021/02/14 00:19:35 debug conn: event Page.loadEventFired
+2021/02/14 00:19:35 debug conn: event Page.domContentEventFired
+2021/02/14 00:19:35 debug conn: <- 24              
+2021/02/14 00:19:35 debug conn: -> 25:Page.navigate sessionid=2C49A0EFA12B5F4593A9BDDC220BBFF2, {"transitionType":"typed","url":"about:blank"}
+2021/02/14 00:19:35 debug conn: <- 25              
+2021/02/14 00:19:35 debug conn: -> 26:Page.stopLoading sessionid=2C49A0EFA12B5F4593A9BDDC220BBFF2
+2021/02/14 00:19:35 debug conn: <- 26              
+2021/02/14 00:19:35 debug Extracting                url=https://www.example.com/
+2021/02/14 00:19:35 debug conn: -> 27:Network.getAllCookies sessionid=2C49A0EFA12B5F4593A9BDDC220BBFF2
+2021/02/14 00:19:35 debug conn: event Page.frameStartedLoading
+2021/02/14 00:19:35 debug conn: <- 27              
+2021/02/14 00:19:35 debug Console info: "<ngfetch-info>{\"type\":\"cmp-info\",\"cmp\":false,\"tcfapi\":false,\"Optanon\":false}</ngfetch-info>" url=https://www.example.com/
+2021/02/14 00:19:35 debug Console info: "<ngfetch-info>{\"type\":\"js-info\",\"data\":[\"window\",\"self\",\"document\",\"name\",\"location\",\"customElements\",\"history\",\"locationbar\",\"menubar\",\"personalbar\",\"scrollbars\",\"statusbar\",\"toolbar\",\"status\",\"closed\",\"frames\",\"length\",\"top\",\"opener\",\"parent\",\"frameElement\",\"navigator\",\"origin\",\"external\",\"screen\",\"innerWidth\",\"innerHeight\",\"scrollX\",\"pageXOffset\",\"scrollY\",\"pageYOffset\",\"visualViewport\",\"screenX\",\"screenY\",\"outerWidth\",\"outerHeight\",\"devicePixelRatio\",\"clientInformation\",\"screenLeft\",\"screenTop\",\"defaultStatus\",\"defaultstatus\",\"styleMedia\",\"onsearch\",\"isSecureContext\",\"performance\",\"onappinstalled\",\"onbeforeinstallprompt\",\"crypto\",\"indexedDB\",\"webkitStorageInfo\",\"sessionStorage\",\"localStorage\",\"onabort\",\"onblur\",\"oncancel\",\"oncanplay\",\"oncanplaythrough\",\"onchange\",\"onclick\",\"onclose\",\"oncontextmenu\",\"oncuechange\",\"ondblclick\",\"ondrag\",\"ondragend\",\"ondragenter\",\"ondragleave\",\"ondragover\",\"ondragstart\",\"ondrop\",\"ondurationchange\",\"onemptied\",\"onended\",\"onerror\",\"onfocus\",\"onformdata\",\"oninput\",\"oninvalid\",\"onkeydown\",\"onkeypress\",\"onkeyup\",\"onload\",\"onloadeddata\",\"onloadedmetadata\",\"onloadstart\",\"onmousedown\",\"onmouseenter\",\"onmouseleave\",\"onmousemove\",\"onmouseout\",\"onmouseover\",\"onmouseup\",\"onmousewheel\",\"onpause\",\"onplay\",\"onplaying\",\"onprogress\",\"onratechange\",\"onreset\",\"onresize\",\"onscroll\",\"onseeked\",\"onseeking\",\"onselect\",\"onstalled\",\"onsubmit\",\"onsuspend\",\"ontimeupdate\",\"ontoggle\",\"onvolumechange\",\"onwaiting\",\"onwebkitanimationend\",\"onwebkitanimationiteration\",\"onwebkitanimationstart\",\"onwebkittransitionend\",\"onwheel\",\"onauxclick\",\"ongotpointercapture\",\"onlostpointercapture\",\"onpointerdown\",\"onpointermove\",\"onpointerup\",\"onpointercancel\",\"onpointerover\",\"onpointerout\",\"onpointerenter\",\"onpointerleave\",\"onselectstart\",\"onselectionchange\",\"onanimationend\",\"onanimationiteration\",\"onanimationstart\",\"ontransitionrun\",\"ontransitionstart\",\"ontransitionend\",\"ontransitioncancel\",\"onafterprint\",\"onbeforeprint\",\"onbeforeunload\",\"onhashchange\",\"onlanguagechange\",\"onmessage\",\"onmessageerror\",\"onoffline\",\"ononline\",\"onpagehide\",\"onpageshow\",\"onpopstate\",\"onrejectionhandled\",\"onstorage\",\"onunhandledrejection\",\"onunload\",\"alert\",\"atob\",\"blur\",\"btoa\",\"cancelAnimationFrame\",\"cancelIdleCallback\",\"captureEvents\",\"clearInterval\",\"clearTimeout\",\"close\",\"confirm\",\"createImageBitmap\",\"fetch\",\"find\",\"focus\",\"getComputedStyle\",\"getSelection\",\"matchMedia\",\"moveBy\",\"moveTo\",\"open\",\"postMessage\",\"print\",\"prompt\",\"queueMicrotask\",\"releaseEvents\",\"requestAnimationFrame\",\"requestIdleCallback\",\"resizeBy\",\"resizeTo\",\"scroll\",\"scrollBy\",\"scrollTo\",\"setInterval\",\"setTimeout\",\"stop\",\"webkitCancelAnimationFrame\",\"webkitRequestAnimationFrame\",\"caches\",\"ondevicemotion\",\"ondeviceorientation\",\"ondeviceorientationabsolute\",\"cookieStore\",\"showDirectoryPicker\",\"showOpenFilePicker\",\"showSaveFilePicker\",\"speechSynthesis\",\"onpointerrawupdate\",\"trustedTypes\",\"crossOriginIsolated\",\"openDatabase\",\"webkitRequestFileSystem\",\"webkitResolveLocalFileSystemURL\"]}</ngfetch-info>" url=https://www.example.com/
+2021/02/14 00:19:35 debug conn: event Security.securityStateChanged
+2021/02/14 00:19:35 debug conn: event Runtime.executionContextsCleared
+2021/02/14 00:19:35 debug conn: event Page.frameNavigated
+2021/02/14 00:19:35 debug conn: event Runtime.executionContextCreated
+2021/02/14 00:19:35 debug conn: event Page.loadEventFired
+2021/02/14 00:19:35 debug conn: event Page.frameStoppedLoading
+2021/02/14 00:19:35 debug conn: event Page.domContentEventFired
+2021/02/14 00:19:35 debug 16 messages during extraction extraction_messages=map[Page.domContentEventFired:2 Page.frameNavigated:1 Page.frameResized:4 Page.frameStartedLoading:1 Page.frameStoppedLoading:1 Page.loadEventFired:2 Runtime.consoleAPICalled:2 Runtime.executionContextCreated:1 Runtime.executionContextsCleared:1 Security.securityStateChanged:1] url=https://www.example.com/
+2021/02/14 00:19:35 debug Extraction exited: done   url=https://www.example.com/
+2021/02/14 00:19:36  info Generating markup...     
+2021/02/14 00:19:36 debug Terminating process 29572
+2021/02/14 00:19:36 debug conn: read error EOF     
+2021/02/14 00:19:36 debug Browser terminated, exited: signal: terminated

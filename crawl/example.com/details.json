@@ -1,0 +1,354 @@
+{
+  "version": 2,
+  "browser_version": "",
+  "capture_version": "",
+  "started": "2021-02-14T00:19:24.448614469+01:00",
+  "pages": [
+    {
+      "flows": [
+        {
+          "browser_frameid": "9C0D5ECD51B05C41E85C3D01D602C68B",
+          "browser_initiator": {
+            "type": "other"
+          },
+          "browser_type": "Document",
+          "connection_security": {
+            "cipher": "AES_256_GCM",
+            "keyexchange": "",
+            "keyexchangegroup": "P-256",
+            "protocol": "TLS 1.3"
+          },
+          "document_url": "https://www.example.com/",
+          "host": "www.example.com",
+          "id": "B74EE07ED630C6367F1DC17E85B43DEB",
+          "ip": "93.184.216.34",
+          "protocol": "h2",
+          "port": 443,
+          "request": {
+            "headers": {
+              ":authority": "www.example.com",
+              ":method": "GET",
+              ":path": "/",
+              ":scheme": "https",
+              "accept": "text/html,application/xhtml+xml,application/xml;q=0.9,image/avif,image/webp,image/apng,*/*;q=0.8,application/signed-exchange;v=b3;q=0.9",
+              "accept-encoding": "gzip, deflate, br",
+              "accept-language": "en-US",
+              "sec-fetch-dest": "document",
+              "sec-fetch-mode": "navigate",
+              "sec-fetch-site": "none",
+              "sec-fetch-user": "?1",
+              "upgrade-insecure-requests": "1",
+              "user-agent": "Mozilla/5.0 (X11; Linux x86_64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/88.0.4324.150 Safari/537.36"
+            },
+            "is_link_preload": false,
+            "method": "GET",
+            "mixed_content_type": "none",
+            "referrer_policy": "no-referrer-when-downgrade",
+            "sequence": 3,
+            "url": "https://www.example.com"
+          },
+          "response": {
+            "code": 200,
+            "data_length": 849,
+            "from_disk_cache": false,
+            "from_serviceworker": false,
+            "headers": {
+              "age": "139633",
+              "cache-control": "max-age=604800",
+              "content-encoding": "gzip",
+              "content-length": "648",
+              "content-type": "text/html; charset=UTF-8",
+              "date": "Sat, 13 Feb 2021 23:19:24 GMT",
+              "etag": "\"3147526947+gzip\"",
+              "expires": "Sat, 20 Feb 2021 23:19:24 GMT",
+              "last-modified": "Thu, 17 Oct 2019 07:18:26 GMT",
+              "server": "ECS (nyb/1D1E)",
+              "vary": "Accept-Encoding",
+              "x-cache": "HIT"
+            },
+            "message": "",
+            "mimetype": "text/html",
+            "security_state": "secure",
+            "sequence": 6
+          },
+          "timing": {
+            "requesttime": 23912570,
+            "dnsstart": 20.835,
+            "dnsend": 22.774,
+            "connectstart": 22.774,
+            "connectend": 322.265,
+            "sslstart": 119.891,
+            "sslend": 322.221,
+            "sendstart": 322.575,
+            "sendend": 322.86,
+            "proxystart": -1,
+            "proxyend": -1,
+            "pushstart": 0,
+            "pushend": 0,
+            "receiveheadersend": 419.876,
+            "workerstart": -1,
+            "workerready": -1
+          }
+        }
+      ],
+      "frames": {
+        "9C0D5ECD51B05C41E85C3D01D602C68B": {
+          "attached": 0,
+          "detached": 0,
+          "history": [
+            {
+              "mimetype": "text/html",
+              "name": "",
+              "navigated": 10,
+              "securityorigin": "https://www.example.com",
+              "started_loading": 7,
+              "stopped_loading": 15,
+              "url": "https://www.example.com"
+            }
+          ],
+          "parentid": ""
+        }
+      },
+      "links": [
+        {
+          "root": "https://www.example.com/",
+          "url": "https://www.iana.org/domains/example",
+          "text": [
+            "More information..."
+          ]
+        }
+      ],
+      "logs": [],
+      "rootframe": "9C0D5ECD51B05C41E85C3D01D602C68B",
+      "screenshot": 0,
+      "sequence": 0,
+      "websockets": []
+    }
+  ],
+  "plan": {
+    "urls": [
+      "https://www.example.com/"
+    ],
+    "actions": {
+      "script": {
+        "selector": "(function () {\n    function logInfo(data) {\n        console.info(\"\\x3cngfetch-info\\x3e\" + JSON.stringify(data) + \"\\x3c/ngfetch-info\\x3e\");\n    }\n\n    logInfo({\n        type: \"cmp-info\",\n        cmp: !!window.__cmp,\n        tcfapi: !!window.__tcfapi,\n        Optanon: !!window.Optanon,\n    });\n\n    [\"__tcfapi\", \"__cmp\"].forEach(function (cmpfun) {\n        if (!window[cmpfun]) return;\n\n        let logged_waiting = false;\n        let ping = window.setInterval(function () {\n            window[cmpfun](\"ping\", null, function (pong, success) {\n                if (pong && !pong.cmpLoaded && !logged_waiting) {\n                    logInfo({type: \"cmp-ping-waiting\", cmpfun, pong, success})\n                    logged_waiting = true;\n                }\n                if (pong && pong.cmpLoaded) {\n                    logInfo({type: \"cmp-ping-done\", cmpfun, pong, success})\n                    window.clearInterval(ping);\n                }\n            });\n        }, 1);\n\n    });\n\n    logInfo({\n        type: \"js-info\",\n        data: Object.keys(window)\n    });\n})();\n"
+      }
+    }
+  },
+  "certchains": [
+    {
+      "chain": [
+        {
+          "authoritykeyid": "b76ba2eaa8aa848c79eab4da0f98b2c59576b9f4",
+          "basicconstraints": {
+            "isca": false,
+            "maxpathlen": -1
+          },
+          "crldistributionpoints": [
+            "http://crl3.digicert.com/DigiCertTLSRSASHA2562020CA1.crl",
+            "http://crl4.digicert.com/DigiCertTLSRSASHA2562020CA1.crl"
+          ],
+          "dnsnames": [
+            "www.example.org",
+            "example.com",
+            "example.edu",
+            "example.net",
+            "example.org",
+            "www.example.com",
+            "www.example.edu",
+            "www.example.net"
+          ],
+          "extendedkeyusage": [
+            "serverauth",
+            "clientauth"
+          ],
+          "extensions": [
+            {
+              "critical": false,
+              "oid": "2.5.29.32",
+              "name": "Certificate Policies"
+            },
+            {
+              "critical": false,
+              "oid": "1.3.6.1.4.1.11129.2.4.2",
+              "name": ""
+            }
+          ],
+          "fingerprints": {
+            "sha1": "0a28a6eb176ea9cc596f4c73fd897efbd32dca2a",
+            "sha256": "200dcafa767c8450ece644879c062a0cdf52240fe05bb7eb284611c3aef3ec2e"
+          },
+          "issuer": {
+            "commonname": "DigiCert TLS RSA SHA256 2020 CA1",
+            "country": [
+              "US"
+            ],
+            "org": [
+              "DigiCert Inc"
+            ]
+          },
+          "issuingcertificateurl": [
+            "http://cacerts.digicert.com/DigiCertTLSRSASHA2562020CA1.crt"
+          ],
+          "keyusage": [
+            "keyencipherment",
+            "digitalsignature"
+          ],
+          "notafter": "2021-12-25T23:59:59Z",
+          "notbefore": "2020-11-24T00:00:00Z",
+          "ocspserver": [
+            "http://ocsp.digicert.com"
+          ],
+          "publickey": {
+            "bits": "2048",
+            "exponent": "65537"
+          },
+          "publickeyalgorithm": "RSA",
+          "serialnumber": "fbe08b0854d05738ab0cce1c9afeec9",
+          "signaturealgorithm": "SHA256-RSA",
+          "subject": {
+            "commonname": "www.example.org",
+            "country": [
+              "US"
+            ],
+            "locality": [
+              "Los Angeles"
+            ],
+            "org": [
+              "Internet Corporation for Assigned Names and Numbers"
+            ],
+            "province": [
+              "California"
+            ]
+          },
+          "subjectkeyid": "261af8e4b1b07284ceda8106d22798fbed3a3d17",
+          "version": 3
+        },
+        {
+          "authoritykeyid": "03de503556d14cbb66f0a3e21b1bc397b23dd155",
+          "basicconstraints": {
+            "isca": true,
+            "maxpathlen": 0
+          },
+          "crldistributionpoints": [
+            "http://crl3.digicert.com/DigiCertGlobalRootCA.crl",
+            "http://crl4.digicert.com/DigiCertGlobalRootCA.crl"
+          ],
+          "extendedkeyusage": [
+            "serverauth",
+            "clientauth"
+          ],
+          "extensions": [
+            {
+              "critical": false,
+              "oid": "2.5.29.32",
+              "name": "Certificate Policies"
+            }
+          ],
+          "fingerprints": {
+            "sha1": "6938fd4d98bab03faadb97b34396831e3780aea1",
+            "sha256": "25768713d3b459f9382d2a594f85f34709fd2a8930731542a4146ffb246bec69"
+          },
+          "issuer": {
+            "commonname": "DigiCert Global Root CA",
+            "country": [
+              "US"
+            ],
+            "org": [
+              "DigiCert Inc"
+            ],
+            "orgunit": [
+              "www.digicert.com"
+            ]
+          },
+          "issuingcertificateurl": [
+            "http://cacerts.digicert.com/DigiCertGlobalRootCA.crt"
+          ],
+          "keyusage": [
+            "digitalsignature",
+            "crlsign",
+            "certsign"
+          ],
+          "notafter": "2030-09-23T23:59:59Z",
+          "notbefore": "2020-09-24T00:00:00Z",
+          "ocspserver": [
+            "http://ocsp.digicert.com"
+          ],
+          "publickey": {
+            "bits": "2048",
+            "exponent": "65537"
+          },
+          "publickeyalgorithm": "RSA",
+          "serialnumber": "a3508d55c292b017df8ad65c00ff7e4",
+          "signaturealgorithm": "SHA256-RSA",
+          "subject": {
+            "commonname": "DigiCert TLS RSA SHA256 2020 CA1",
+            "country": [
+              "US"
+            ],
+            "org": [
+              "DigiCert Inc"
+            ]
+          },
+          "subjectkeyid": "b76ba2eaa8aa848c79eab4da0f98b2c59576b9f4",
+          "version": 3
+        },
+        {
+          "authoritykeyid": "03de503556d14cbb66f0a3e21b1bc397b23dd155",
+          "basicconstraints": {
+            "isca": true,
+            "maxpathlen": -1
+          },
+          "extensions": [],
+          "fingerprints": {
+            "sha1": "a8985d3a65e5e5c4b2d7d66d40c6dd2fb19c5436",
+            "sha256": "4348a0e9444c78cb265e058d5e8944b4d84f9662bd26db257f8934a443c70161"
+          },
+          "issuer": {
+            "commonname": "DigiCert Global Root CA",
+            "country": [
+              "US"
+            ],
+            "org": [
+              "DigiCert Inc"
+            ],
+            "orgunit": [
+              "www.digicert.com"
+            ]
+          },
+          "keyusage": [
+            "certsign",
+            "crlsign",
+            "digitalsignature"
+          ],
+          "notafter": "2031-11-10T00:00:00Z",
+          "notbefore": "2006-11-10T00:00:00Z",
+          "publickey": {
+            "bits": "2048",
+            "exponent": "65537"
+          },
+          "publickeyalgorithm": "RSA",
+          "serialnumber": "83be056904246b1a1756ac95991c74a",
+          "signaturealgorithm": "SHA1-RSA",
+          "subject": {
+            "commonname": "DigiCert Global Root CA",
+            "country": [
+              "US"
+            ],
+            "org": [
+              "DigiCert Inc"
+            ],
+            "orgunit": [
+              "www.digicert.com"
+            ]
+          },
+          "subjectkeyid": "03de503556d14cbb66f0a3e21b1bc397b23dd155",
+          "version": 3
+        }
+      ],
+      "hostname": "www.example.com",
+      "ip": "93.184.216.34",
+      "port": 443
+    }
+  ]
+}

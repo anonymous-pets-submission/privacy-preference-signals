@@ -1,0 +1,118 @@
+{
+  "version": 2,
+  "pages": [
+    {
+      "documents": [
+        {
+          "url": "https://www.example.com/",
+          "tree": {
+            "id": 0,
+            "children": [
+              {
+                "id": 2,
+                "type": "html",
+                "children": [
+                  {
+                    "id": 18,
+                    "styles": {
+                      "background-color": "rgb(240, 240, 242)"
+                    },
+                    "type": "body",
+                    "children": [
+                      {
+                        "id": 20,
+                        "styles": {
+                          "background-color": "rgb(253, 253, 255)"
+                        },
+                        "type": "div",
+                        "children": [
+                          {
+                            "id": 22,
+                            "type": "h1",
+                            "children": [
+                              {
+                                "id": 23,
+                                "bounds": {
+                                  "x": 100,
+                                  "y": 133.4375,
+                                  "w": 268.84375,
+                                  "h": 37
+                                },
+                                "text": "Example Domain",
+                                "styles": {
+                                  "display": "block",
+                                  "font-size": "32px",
+                                  "font-weight": "700"
+                                },
+                                "type": "#text"
+                              }
+                            ]
+                          },
+                          {
+                            "id": 25,
+                            "type": "p",
+                            "children": [
+                              {
+                                "id": 26,
+                                "bounds": {
+                                  "x": 100,
+                                  "y": 191.875,
+                                  "w": 585.703125,
+                                  "h": 54
+                                },
+                                "text": "This domain is for use in illustrative examples in documents. You may use this\n    domain in literature without prior coordination or asking for permission.",
+                                "styles": {
+                                  "display": "block",
+                                  "font-size": "16px"
+                                },
+                                "type": "#text"
+                              }
+                            ]
+                          },
+                          {
+                            "id": 28,
+                            "type": "p",
+                            "children": [
+                              {
+                                "id": 29,
+                                "attrs": {
+                                  "href": "https://www.iana.org/domains/example"
+                                },
+                                "styles": {
+                                  "display": "inline"
+                                },
+                                "type": "a",
+                                "children": [
+                                  {
+                                    "id": 30,
+                                    "bounds": {
+                                      "x": 100,
+                                      "y": 261.875,
+                                      "w": 182.4375,
+                                      "h": 18
+                                    },
+                                    "text": "More information...",
+                                    "styles": {
+                                      "color": "rgb(56, 72, 143)",
+                                      "display": "inline",
+                                      "font-size": "16px"
+                                    },
+                                    "type": "#text"
+                                  }
+                                ]
+                              }
+                            ]
+                          }
+                        ]
+                      }
+                    ]
+                  }
+                ]
+              }
+            ]
+          }
+        }
+      ]
+    }
+  ]
+}

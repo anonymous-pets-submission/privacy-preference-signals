@@ -1,0 +1,44 @@
+{
+  "version": 2,
+  "capture_version": "",
+  "domains": {
+    "example.com": {
+      "hosts": {
+        "www.example.com": [
+          "93.184.216.34"
+        ]
+      }
+    }
+  },
+  "pages": [
+    {
+      "roots": [
+        {
+          "basedomain": "example.com",
+          "landing": true,
+          "network": {
+            "example.com": {
+              "https": 1,
+              "https_types": {
+                "html": 1
+              }
+            }
+          },
+          "url": "https://www.example.com"
+        }
+      ],
+      "state": {}
+    }
+  ],
+  "plan": {
+    "urls": [
+      "https://www.example.com/"
+    ],
+    "actions": {
+      "script": {
+        "selector": "(function () {\n    function logInfo(data) {\n        console.info(\"\\x3cngfetch-info\\x3e\" + JSON.stringify(data) + \"\\x3c/ngfetch-info\\x3e\");\n    }\n\n    logInfo({\n        type: \"cmp-info\",\n        cmp: !!window.__cmp,\n        tcfapi: !!window.__tcfapi,\n        Optanon: !!window.Optanon,\n    });\n\n    [\"__tcfapi\", \"__cmp\"].forEach(function (cmpfun) {\n        if (!window[cmpfun]) return;\n\n        let logged_waiting = false;\n        let ping = window.setInterval(function () {\n            window[cmpfun](\"ping\", null, function (pong, success) {\n                if (pong && !pong.cmpLoaded && !logged_waiting) {\n                    logInfo({type: \"cmp-ping-waiting\", cmpfun, pong, success})\n                    logged_waiting = true;\n                }\n                if (pong && pong.cmpLoaded) {\n                    logInfo({type: \"cmp-ping-done\", cmpfun, pong, success})\n                    window.clearInterval(ping);\n                }\n            });\n        }, 1);\n\n    });\n\n    logInfo({\n        type: \"js-info\",\n        data: Object.keys(window)\n    });\n})();\n"
+      }
+    }
+  },
+  "started": "2021-02-14T00:19:24.448614469+01:00"
+}
