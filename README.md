@@ -1,5 +1,20 @@
 # Privacy Preference Signals: Past, Present and Future
 
+📄 [Preprint](https://arxiv.org/abs/2106.02283)
+
+> Hils, M., Woods, D.W., and Böhme, R. Privacy Preference Signals: Past, Present and Future. *Proceedings on Privacy Enhancing Technologies*, 4 (2021). 
+
+```bibtex
+@article{hwb2021-pets,
+ title = {Privacy Preference Signals: {P}ast, Present and Future},
+ author = {Hils, Maximilian and Woods, Daniel W. and B{\"o}hme, Rainer},
+ journal = {Proceedings on Privacy Enhancing Technologies},
+ number = {4},
+ year = {2021},
+ preprinturl = {https://arxiv.org/pdf/2106.02283.pdf}
+}
+```
+
 ## Supplementary Material
 
 This repository contains supplementary material for the PETS 2021 paper "Privacy Preference Signals: Past, Present and Future".
