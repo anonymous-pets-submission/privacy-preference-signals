@@ -10,6 +10,8 @@ Crawl Date: 2021-02-13 – 2021-02-19
 
 User-Agent: `Mozilla/5.0 (X11; Linux x86_64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/88.0.4324.150 Safari/537.36`
 
+Toplist: https://tranco-list.eu/list/K8JW/
+
 ## JavaScript Instrumentation
 
 `browser-inject.js` contains the JavaScript code that is injected into each crawled website ten seconds after `DOMContentLoaded`. It looks available JS objects and attempts to interact with TCF implementations.
