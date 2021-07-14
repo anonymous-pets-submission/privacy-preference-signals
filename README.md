@@ -1,6 +1,6 @@
 # Privacy Preference Signals: Past, Present and Future
 
-📄 [Preprint](https://arxiv.org/abs/2106.02283) 🎞️ [Presentation (YouTube)](https://youtu.be/-vsKzuVcq3o)
+📄 [Paper (petsymposium.org)](https://petsymposium.org/2021/files/papers/issue4/popets-2021-0069.pdf)  🎞️ [Presentation (YouTube)](https://youtu.be/-vsKzuVcq3o)
 
 > Hils, M., Woods, D.W., and Böhme, R. Privacy Preference Signals: Past, Present and Future. *Proceedings on Privacy Enhancing Technologies*, 4 (2021). 
 
@@ -11,7 +11,7 @@
  journal = {Proceedings on Privacy Enhancing Technologies},
  number = {4},
  year = {2021},
- preprinturl = {https://arxiv.org/pdf/2106.02283.pdf}
+ url = {https://petsymposium.org/2021/files/papers/issue4/popets-2021-0069.pdf}
 }
 ```
 
