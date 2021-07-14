@@ -10,9 +10,14 @@ This directory contains the code used to convert domains into URLs that can be c
  - `export-urls.py` accepts the same `rank,domain` toplist via stdin and 
    outputs a `rank,url` csv file.
 
+## Requirements
+
+This code has been tested with Python 3.9.4 and the requirements listed in `requirements.txt`.
+
 ## Example Usage
 
 ```bash
+python3 --version  # should be 3.9 or above
 pip install -r requirements.txt
 curl -o tranco.csv https://tranco-list.eu/download/K8JW/1000
 cat tranco.csv | ./check-availability.py
